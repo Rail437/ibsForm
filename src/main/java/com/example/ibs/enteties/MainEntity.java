@@ -18,13 +18,9 @@ public class MainEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long main_id;
-
     private String organizationName;
-
     private String address;
-
     private int okud;
-
     private int okpo;
 
     //Раздел 1. Добыча нефти, тонн
