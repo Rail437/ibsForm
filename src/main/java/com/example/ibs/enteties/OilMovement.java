@@ -18,22 +18,22 @@ public class OilMovement {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    private int remainsBeginning;
-    private int extracted;
-    private int received;
-    private int total;
-    private int expenditureOnNeeds;
-    private int lossesTotal;
-    private int passedTotal;
-    private int oilGasFactory;
-    private int gasFactory;
-    private int handedOil;
-    private int export;
-    private int drilling;
-    private int otherMineFactory;
-    private int otherFactory;
-    private int totalExpense;
-    private int remainsEnd;
-    private int remainsEndOilPipelinesAndTanks;
+    private double remainsBeginning;
+    private double extracted;
+    private double received;
+    private double total;
+    private double expenditureOnNeeds;
+    private double lossesTotal;
+    private double passedTotal;
+    private double oilGasFactory;
+    private double gasFactory;
+    private double handedOil;
+    private double export;
+    private double drilling;
+    private double otherMineFactory;
+    private double otherFactory;
+    private double totalExpense;
+    private double remainsEnd;
+    private double remainsEndOilPipelinesAndTanks;
     private String transcriptAmountOil;
 }

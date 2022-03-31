@@ -18,8 +18,8 @@ public class MethodsInfluence {
     @Column(name = "id", nullable = false)
     private int id;
 
-    private int impactFormation;
-    private int increaseProduction;
+    private double impactFormation;
+    private double increaseProduction;
 
     public static MethodsInfluence getRandom(){
         Random random = new Random();

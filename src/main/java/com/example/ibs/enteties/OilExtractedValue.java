@@ -21,12 +21,13 @@ public class OilExtractedValue {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    private int YearProduction;
-    private int CountedMounth;
-    private int UncountedMonth;
-    private int AverageDebit;
-    private int NumberOfWells;
-    private int ExtractedFromWells;
+    //private String name;
+    private double YearProduction;
+    private double CountedMounth;
+    private double UncountedMonth;
+    private double AverageDebit;
+    private double NumberOfWells;
+    private double ExtractedFromWells;
 
 
     public static OilExtractedValue getRandom(){

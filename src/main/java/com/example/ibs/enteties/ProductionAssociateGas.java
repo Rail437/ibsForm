@@ -18,8 +18,8 @@ public class ProductionAssociateGas {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    private int factGasProduction;
-    private int consumptionGas;
-    private int technologicalLosses;
-    private int burnedGas;
+    private double factGasProduction;
+    private double consumptionGas;
+    private double technologicalLosses;
+    private double burnedGas;
 }

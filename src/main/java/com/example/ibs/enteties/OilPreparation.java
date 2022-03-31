@@ -18,8 +18,8 @@ public class OilPreparation {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    private int liquidIntake;
-    private int receivedOil;
-    private int preparedOil;
-    private int oilLosses;
+    private double liquidIntake;
+    private double receivedOil;
+    private double preparedOil;
+    private double oilLosses;
 }

@@ -18,25 +18,25 @@ public class WellValue {
     private Long id;
     //Календарное время эксплуа-
     //тационного фонда — всего (гр. 2 +5+7)
-    private int exploatingFund ;
+    private float exploatingFund ;
 
     //2
-    private int operatingFundTotal;
+    private float operatingFundTotal;
 
     //3
-    private int operatingFundExploit;
+    private float operatingFundExploit;
 
     //4
-    private int operating_fund_downtime;
+    private float operating_fund_downtime;
 
     //5
-    private int without_production_total;
+    private float without_production_total;
 
     //6
-    private int without_production_last_year;
+    private float without_production_last_year;
 
     //7
-    private int awaitingWellsTime;
+    private float awaitingWellsTime;
 
     public static WellValue getRandom(){
         Random random = new Random();
