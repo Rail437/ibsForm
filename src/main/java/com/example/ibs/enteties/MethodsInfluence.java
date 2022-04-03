@@ -2,11 +2,10 @@ package com.example.ibs.enteties;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Generated;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Random;
 
 @Entity
@@ -15,7 +14,7 @@ import java.util.Random;
 @NoArgsConstructor
 public class MethodsInfluence {
     @Id
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     private double impactFormation;

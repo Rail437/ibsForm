@@ -1,19 +1,21 @@
 package com.example.ibs.enteties;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.Random;
 
 @Entity
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class FundReportingPeriod {
 
     @Id
-    @Column(name = "id", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
@@ -34,7 +36,33 @@ public class FundReportingPeriod {
     private int inAwaitingLiquidationWell;
     private int liquidatedAfterOperationWell;
     private int liquidatedAfterDrillingWell;
-
     private int arrivedWell;
     private int droppedWell;
+
+
+    public static FundReportingPeriod getRandom() {
+        Random random = new Random();
+        return new FundReportingPeriod(
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt()
+                );
+    }
 }

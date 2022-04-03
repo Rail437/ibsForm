@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.Random;
 
 @Entity
 @Data
@@ -22,4 +23,14 @@ public class ProductionAssociateGas {
     private double consumptionGas;
     private double technologicalLosses;
     private double burnedGas;
+
+    public static ProductionAssociateGas getRandom(){
+        Random random = new Random();
+        return new ProductionAssociateGas(
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt(),
+                random.nextInt());
+    }
 }

@@ -13,9 +13,8 @@ import java.util.Random;
 @AllArgsConstructor
 public class CommissioningWellValue {
     @Id
-    @Column(name = "id", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private int id;
     private int TotalCommissioningNewWellValue;
     private int AfterDrillingWellValue;
     private int ConservationWellValue;
@@ -26,7 +25,7 @@ public class CommissioningWellValue {
     public static CommissioningWellValue getRandom(){
         Random rand = new Random();
         return new CommissioningWellValue(
-                rand.nextLong(),
+                rand.nextInt(),
                 rand.nextInt(),
                 rand.nextInt(),
                 rand.nextInt(),

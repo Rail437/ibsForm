@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.Random;
 
 @Entity
 @Data
@@ -36,4 +37,30 @@ public class OilMovement {
     private double remainsEnd;
     private double remainsEndOilPipelinesAndTanks;
     private String transcriptAmountOil;
+
+    public static OilMovement getRandom(){
+        Random random = new Random();
+        return new OilMovement(
+                random.nextInt(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                "test"
+        );
+
+    }
 }

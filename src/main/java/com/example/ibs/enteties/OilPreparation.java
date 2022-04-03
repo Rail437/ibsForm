@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.Random;
 
 @Entity
 @Data
@@ -22,4 +23,15 @@ public class OilPreparation {
     private double receivedOil;
     private double preparedOil;
     private double oilLosses;
+
+    public static OilPreparation getRundom(){
+        Random random = new Random();
+        return new OilPreparation(
+                random.nextInt(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble(),
+                random.nextDouble()
+        );
+    }
 }

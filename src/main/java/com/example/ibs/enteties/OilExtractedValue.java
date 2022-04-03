@@ -21,6 +21,9 @@ public class OilExtractedValue {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
+    /**
+     * Добыча нефти, тонн
+     */
     //private String name;
     private double YearProduction;
     private double CountedMounth;

@@ -13,9 +13,8 @@ import java.util.Random;
 @AllArgsConstructor
 public class WellValue {
     @Id
-    @Column(name = "id", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private int id;
     //Календарное время эксплуа-
     //тационного фонда — всего (гр. 2 +5+7)
     private float exploatingFund ;
@@ -41,7 +40,7 @@ public class WellValue {
     public static WellValue getRandom(){
         Random random = new Random();
 
-        return new WellValue(random.nextLong(),
+        return new WellValue(random.nextInt(),
                 9,
                 2,
                 random.nextInt(),
