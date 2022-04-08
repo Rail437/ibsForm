@@ -1,11 +1,13 @@
-package com.example.ibs.enteties;
+package com.example.ibs.enteties.reportforms;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
-import java.util.Random;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 @Data
@@ -21,15 +23,7 @@ public class CommissioningWellValue {
     private int OtherWellValue;
     private int LastYearWellValue;
 
-
-    public static CommissioningWellValue getRandom(){
-        Random rand = new Random();
-        return new CommissioningWellValue(
-                rand.nextInt(),
-                rand.nextInt(),
-                rand.nextInt(),
-                rand.nextInt(),
-                rand.nextInt(),
-                rand.nextInt());
+    public CommissioningWellValue(int totalCommissioningNewWellValue) {
+        TotalCommissioningNewWellValue = totalCommissioningNewWellValue;
     }
 }

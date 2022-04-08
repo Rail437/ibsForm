@@ -1,4 +1,4 @@
-package com.example.ibs.enteties;
+package com.example.ibs.enteties.reportforms;
 
 
 import lombok.AllArgsConstructor;
@@ -13,14 +13,14 @@ import javax.persistence.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-
-public class MainEntity {
+public class ReportEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long main_id;
+    private Long id;
     private String organizationName;
     private String address;
+    private String username;
     private int okud;
     private int okpo;
 

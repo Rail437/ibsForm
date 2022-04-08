@@ -1,4 +1,4 @@
-package com.example.ibs.enteties;
+package com.example.ibs.enteties.applicationforms;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

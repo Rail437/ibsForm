@@ -1,7 +1,8 @@
-package com.example.ibs.enteties;
+package com.example.ibs.enteties.reportforms;
 
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,10 +10,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.util.Random;
 
 @Entity
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class OilExtractedValue {
@@ -32,16 +33,7 @@ public class OilExtractedValue {
     private double NumberOfWells;
     private double ExtractedFromWells;
 
-
-    public static OilExtractedValue getRandom(){
-        Random random = new Random();
-        return new OilExtractedValue(
-                random.nextInt(),
-                random.nextInt(),
-                random.nextInt(),
-                random.nextInt(),
-                random.nextInt(),
-                random.nextInt(),
-                random.nextInt());
+    public OilExtractedValue(double yearProduction) {
+        YearProduction = yearProduction;
     }
 }
