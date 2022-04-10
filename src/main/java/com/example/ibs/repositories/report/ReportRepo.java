@@ -1,10 +1,10 @@
-package com.example.ibs.repositories;
+package com.example.ibs.repositories.report;
 
 import com.example.ibs.enteties.reportforms.ReportEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface MainRepo extends JpaRepository<ReportEntity, Long> {
+public interface ReportRepo extends JpaRepository<ReportEntity, Long> {
 
 }

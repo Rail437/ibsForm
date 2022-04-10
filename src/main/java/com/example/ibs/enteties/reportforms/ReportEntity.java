@@ -20,9 +20,15 @@ public class ReportEntity {
     private Long id;
     private String organizationName;
     private String address;
-    private String username;
     private int okud;
     private int okpo;
+    private String official;
+    private String initials;
+    private Long phoneNumber;
+    private String email;
+    private Long date;
+    private String username;
+    private int filial;
 
     //Раздел 1. Добыча нефти, тонн
     @OneToOne(cascade = CascadeType.ALL)
@@ -161,9 +167,5 @@ public class ReportEntity {
     @JoinColumn(name = "oil_preparation_id")
     private OilPreparation oilPreparation;
 
-    private String official;
-    private String initials;
-    private Long phoneNumber;
-    private String email;
-    private Long date;
+
 }

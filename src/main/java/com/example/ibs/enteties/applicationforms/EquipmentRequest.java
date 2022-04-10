@@ -10,11 +10,12 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ApplicationForm {
+public class EquipmentRequest {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     @JoinColumn(name = "type_id",nullable = false)
     private EquipmentType type;
 
@@ -27,4 +28,6 @@ public class ApplicationForm {
 
     @Column(length = 3000)
     private String justification;
+
+    private boolean approved;
 }

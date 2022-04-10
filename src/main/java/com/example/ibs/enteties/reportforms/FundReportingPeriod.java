@@ -39,8 +39,8 @@ public class FundReportingPeriod {
     private int liquidatedAfterOperationWell;//128
     private int liquidatedAfterDrillingWell;//129
     private int totalFundOfWell;//130
-    private int AcceptedWellsFromDrilling;//131
-    private int AcceptedFromGasFund;//132
+    private int acceptedWellsFromDrilling;//131
+    private int acceptedFromGasFund;//132
     private int arrivedWell;//141
     private int droppedWell;//142
 }

@@ -28,13 +28,13 @@ public class WellValue {
     private float operatingFundExploit;
 
     //4
-    private float operating_fund_downtime;
+    private float operatingFundDowntime;
 
     //5
-    private float without_production_total;
+    private float withoutProductionTotal;
 
     //6
-    private float without_production_last_year;
+    private float withoutProductionLastYear;
 
     //7
     private float awaitingWellsTime;

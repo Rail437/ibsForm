@@ -1,7 +1,7 @@
 package com.example.ibs.enteties.applicationforms;
 
 
-import com.example.ibs.enteties.applicationforms.ApplicationForm;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,8 +16,9 @@ import java.util.List;
 public class EquipmentType {
     @Id
     @Column(name = "type_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long typeId;
     private String name;
     @OneToMany(mappedBy = "type", fetch = FetchType.LAZY)
-    private List<ApplicationForm> forms;
+    private List<EquipmentRequest> forms;
 }

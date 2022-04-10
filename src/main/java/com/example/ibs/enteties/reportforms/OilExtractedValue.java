@@ -26,14 +26,14 @@ public class OilExtractedValue {
      * Добыча нефти, тонн
      */
     //private String name;
-    private double YearProduction;
-    private double CountedMounth;
-    private double UncountedMonth;
-    private double AverageDebit;
-    private double NumberOfWells;
-    private double ExtractedFromWells;
+    private double yearProduction;
+    private double countedMounth;
+    private double uncountedMonth;
+    private double averageDebit;
+    private double numberOfWells;
+    private double extractedFromWells;
 
     public OilExtractedValue(double yearProduction) {
-        YearProduction = yearProduction;
+        this.yearProduction = yearProduction;
     }
 }

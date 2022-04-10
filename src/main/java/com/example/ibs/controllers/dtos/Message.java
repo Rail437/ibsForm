@@ -5,6 +5,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
+/**
+ * Безтолковый вариант представления ReportDto.
+ */
 @Data
 @Builder
 @NoArgsConstructor

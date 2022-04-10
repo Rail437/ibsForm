@@ -2,12 +2,11 @@ package com.example.ibs.controllers.dtos;
 
 
 import com.example.ibs.enteties.reportforms.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
 
 @Data
 @Builder
@@ -29,6 +28,7 @@ public class ReportDto {
     private int filial;
 
     //Раздел 1. Добыча нефти, тонн
+    @JsonProperty("standartPump")
     private OilExtractedValue standartPump;
 
     private OilExtractedValue electricPump;
@@ -54,9 +54,9 @@ public class ReportDto {
     private OilExtractedValue totalExtractedOil;
 
     //Раздел 2. Баланс календарного времени фонда нефтяных скважин, часов
-    private WellValue totalWellsBalans;
+    private WellValue totalWellsBalans; //41
 
-    private WellValue newWellsBalans;
+    private WellValue newWellsBalans; //42
 
     //Раздел 3. Ввод в действие скважин, единиц
     private CommissioningWellValue commissioningOilWell;
