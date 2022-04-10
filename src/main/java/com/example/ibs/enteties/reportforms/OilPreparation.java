@@ -1,4 +1,4 @@
-package com.example.ibs.enteties;
+package com.example.ibs.enteties.reportforms;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,8 +18,10 @@ public class OilPreparation {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    private double liquidIntake;
-    private double receivedOil;
-    private double preparedOil;
-    private double oilLosses;
+    private float liquidIntake;
+    private float receivedOil;
+    private float preparedOil;
+    private float oilLosses;
+
+
 }
